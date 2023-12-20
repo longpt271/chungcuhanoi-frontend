@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useWindowSize } from "@uidotdev/usehooks";
 
-import { images } from "../../../../constants";
+// import { images } from "../../../../constants";
 import { useEffect, useState } from "react";
 import { AiFillDashboard, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaComments } from "react-icons/fa";
@@ -59,7 +59,8 @@ const Header = () => {
     <header className="flex h-fit w-full items-center justify-between p-4 lg:h-full lg:max-w-[300px] lg:flex-col lg:items-start lg:justify-start lg:p-0">
       {/* logo */}
       <Link to="/">
-        <img src={images.Logo} alt="logo" className="w-16 lg:hidden" />
+        <b className="lg:hidden">Chungcuhanoi</b>
+        {/* <img src={images.Logo} alt="logo" className="w-16 lg:hidden" /> */}
       </Link>
       {/* menu burger icon */}
       <div className="cursor-pointer lg:hidden">
@@ -80,7 +81,8 @@ const Header = () => {
           {/* sidebar */}
           <div className="fixed top-0 bottom-0 left-0 z-50 w-3/4 overflow-y-auto bg-white p-4 lg:static lg:h-full lg:w-full lg:p-6">
             <Link to="/">
-              <img src={images.Logo} alt="logo" className="w-16" />
+              <b>Chungcuhanoi</b>
+              {/* <img src={images.Logo} alt="logo" className="w-16" /> */}
             </Link>
             <h4 className="mt-10 font-bold text-[#C7C7C7]">MAIN MENU</h4>
             {/* menu items */}
