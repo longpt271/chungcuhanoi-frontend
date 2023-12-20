@@ -12,6 +12,7 @@ module.exports = {
         },
       },
       fontFamily: {
+        ebgaramond: ["'EB Garamond'", "sans-serif"],
         opensans: ["'Open Sans'", "sans-serif"],
         roboto: ["'Roboto'", "sans-serif"],
       },
